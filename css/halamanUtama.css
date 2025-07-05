@@ -317,3 +317,29 @@ body {
     align-items: center;
     gap: 4px;
 }
+
+/* Pastikan navbar dapat menampung item di kiri dan kanan */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Sembunyikan kelas navbar-center jika masih ada */
+.navbar-center {
+    display: none;
+}
+
+/* Atur tata letak untuk semua item di sisi kanan */
+.navbar-right {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Memberi jarak antar item */
+}
+
+/* Pastikan link di navbar kanan terlihat bagus */
+.navbar-right a {
+    text-decoration: none;
+    color: #333; /* Warna teks gelap */
+    font-weight: 500;
+}
