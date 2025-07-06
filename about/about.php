@@ -45,21 +45,21 @@
 
             <div class="profile-card">
                 <div class="profile-image">
-                    <img src="https://via.placeholder.com/300x250.png/CCCCCC/000000?text=Foto+Profil" alt="Foto Profil 1">
+                    <img src="diky.png" alt="Foto Profil 1">
                 </div>
                 <div class="profile-info">
-                    <h3>Nama Anggota 1</h3>
-                    <p>Jabatan / NIM</p>
+                    <h3>DIKY ALFIYANSYAH</h3>
+                    <p>2400018184</p>
                 </div>
             </div>
 
             <div class="profile-card">
                 <div class="profile-image">
-                    <img src="https://via.placeholder.com/300x250.png/CCCCCC/000000?text=Foto+Profil" alt="Foto Profil 2">
+                    <img src="bimo.png" alt="Foto Profil 2">
                 </div>
                 <div class="profile-info">
-                    <h3>Nama Anggota 2</h3>
-                    <p>Jabatan / NIM</p>
+                    <h3>ADITOYA BOMI</h3>
+                    <p>2400018191</p>
                 </div>
             </div>
 
