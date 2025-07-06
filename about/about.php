@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cleopatra Navbar</title>
+    <title>About Us</title>
     <link rel="stylesheet" href="../css/halamanUtama.css">
+    <link rel="stylesheet" href="about-page.css">
 
 </head>
 <body>
@@ -16,15 +17,13 @@
             </div>
         </div>
 
-        <div class="navbar-center">
+        <div class="navbar-right">
             <a href="../login_sukses.html">Home</a>
             <a href="../programDiet/diet.php">Program Diet</a>
             <a href="../programBulking/bulking.php">Program Bulking</a>
             <a href="../about/about.php">About</a>
             <a href="../~SignUp_LogIn_Form.php" class="btn-back">Logout</a>
-        <!-- </div>
 
-        <div class="navbar-right"> -->
             <div class="notification-icon icon-bell">
                 <div class="notification-dot"></div>
             </div>
@@ -36,7 +35,56 @@
             </div>
         </div>
     </nav>
+    <div class="main-content">
+        
+        <div class="banner-container">
+            <img src="" alt="Team Banner">
+        </div>
 
-    <h1>Ini halaman kalkulator about</h1>
+        <div class="profile-grid">
+
+            <div class="profile-card">
+                <div class="profile-image">
+                    <img src="https://via.placeholder.com/300x250.png/CCCCCC/000000?text=Foto+Profil" alt="Foto Profil 1">
+                </div>
+                <div class="profile-info">
+                    <h3>Nama Anggota 1</h3>
+                    <p>Jabatan / NIM</p>
+                </div>
+            </div>
+
+            <div class="profile-card">
+                <div class="profile-image">
+                    <img src="https://via.placeholder.com/300x250.png/CCCCCC/000000?text=Foto+Profil" alt="Foto Profil 2">
+                </div>
+                <div class="profile-info">
+                    <h3>Nama Anggota 2</h3>
+                    <p>Jabatan / NIM</p>
+                </div>
+            </div>
+
+            <div class="profile-card">
+                <div class="profile-image">
+                    <img src="https://via.placeholder.com/300x250.png/CCCCCC/000000?text=Foto+Profil" alt="Foto Profil 3">
+                </div>
+                <div class="profile-info">
+                    <h3>Nama Anggota 3</h3>
+                    <p>Jabatan / NIM</p>
+                </div>
+            </div>
+
+            <div class="profile-card">
+                <div class="profile-image">
+                    <img src="https://via.placeholder.com/300x250.png/CCCCCC/000000?text=Foto+Profil" alt="Foto Profil 4">
+                </div>
+                <div class="profile-info">
+                    <h3>Nama Anggota 4</h3>
+                    <p>Jabatan / NIM</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
 </body>
 </html>
