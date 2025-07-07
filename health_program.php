@@ -189,7 +189,7 @@
             </div>
         </div>
         <div class="navbar-right">
-            <a href="login_sukses.html">Beranda</a>
+            <a href="login_sukses.php">Beranda</a>
             <a href="health_program.php">Kalkulator Kesehatan</a>
             <a href="about/about.php">Tentang</a>
             <a href="SignUp_LogIn_Form.php" class="btn-back">Keluar</a>
