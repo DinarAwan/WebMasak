@@ -1,0 +1,58 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #00c6ff, #ff758c);
+    margin: 0;
+    padding: 20px;
+}
+.container {
+    background: #fff;
+    border-radius: 10px;
+    padding: 30px;
+    max-width: 800px;
+    margin: auto;
+}
+h2 {
+    text-align: center;
+    color: #333;
+}
+.entry {
+    margin-bottom: 30px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 20px;
+}
+.entry-field {
+    margin: 5px 0;
+}
+.entry-label {
+    font-weight: bold;
+    width: 120px;
+    display: inline-block;
+}
+.entry-value {
+    color: #333;
+}
+.no-file {
+    color: #888;
+    font-style: italic;
+}
+.file-link {
+    color: #007BFF;
+    text-decoration: none;
+}
+.file-link:hover {
+    text-decoration: underline;
+}
+.link-container {
+    text-align: center;
+    margin-top: 40px;
+}
+.view-link {
+    padding: 10px 20px;
+    background: #28a745;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.view-link:hover {
+    background: #218838;
+}

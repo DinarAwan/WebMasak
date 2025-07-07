@@ -1,3 +1,29 @@
+<?php
+$file_path = "tambahMasakan/dataMasakan.txt";
+$entries = [];
+
+if (file_exists($file_path)) {
+    $file = fopen($file_path, "r");
+    if ($file) {
+        while (($line = fgets($file)) !== false) {
+            $line = trim($line);
+            if (!empty($line)) {
+                $data = explode("|", $line);
+                if (count($data) >= 3) {
+                    $entries[] = [
+                        'nama'      => $data[0],
+                        'alamat'    => $data[1],
+                        'deskripsi' => $data[2],
+                        'file'      => $data[3] ?? ''
+                    ];
+                }
+            }
+        }
+        fclose($file);
+    }
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -25,9 +51,9 @@
         <!-- </div>
 
         <div class="navbar-right"> -->
-            <div class="notification-icon icon-bell">
-                <div class="notification-dot"></div>
-            </div>
+            <a href="tambahMasakan/tambah.php"><div class="notification-icon ">
+                <h1>+</h1>
+            </div></a>
             <div class="notification-icon icon-search"></div>
             <div class="user-profile">
                 <div class="user-avatar">M</div>
@@ -93,24 +119,6 @@
                     </div>
                 </div>
             </div>
-
-            <!-- <div class="recipe-card">
-                <div class="recipe-image food4">🍕</div>
-                <div class="recipe-content">
-                    <h3 class="recipe-title">Pizza Margherita</h3>
-                    <p class="recipe-description">Pizza klasik dengan topping tomat, mozzarella, dan basil segar</p>
-                    <div class="recipe-meta">
-                        <div class="recipe-rating">
-                            <span class="stars">★★★★★</span>
-                            <span>4.9</span>
-                        </div>
-                        <div class="recipe-time">
-                            <span>⏱</span>
-                            <span>35 min</span>
-                        </div>
-                    </div>
-                </div>
-            </div> -->
         </div>
 
         <h2 class="section-title">Resep Lainnya</h2>
@@ -169,24 +177,58 @@
                 </div>
             </div>
 
-            <!-- <div class="recipe-card">
-                <div class="recipe-image food8">🥪</div>
-                <div class="recipe-content">
-                    <h3 class="recipe-title">Club Sandwich</h3>
-                    <p class="recipe-description">Sandwich berlapis dengan daging ayam, sayuran segar, dan saus mayo</p>
-                    <div class="recipe-meta">
-                        <div class="recipe-rating">
-                            <span class="stars">★★★★☆</span>
-                            <span>4.3</span>
-                        </div>
-                        <div class="recipe-time">
-                            <span>⏱</span>
-                            <span>10 min</span>
-                        </div>
+
+
+
+
+
+
+
+            <?php foreach ($entries as $entry): ?>
+        <div class="recipe-card">
+            <div class="recipe-image">
+                <?php
+                    $file_path = "tambahMasakan/uploads/" . $entry['file'];
+                    $file_ext = strtolower(pathinfo($file_path, PATHINFO_EXTENSION));
+                    $is_image = in_array($file_ext, ['jpg', 'jpeg', 'png', 'gif']);
+                ?>
+                <?php if ($is_image && file_exists($file_path)): ?>
+                    <img src="<?= htmlspecialchars($file_path) ?>" alt="<?= htmlspecialchars($entry['nama']) ?>" style="width: 100%; height: 150px; object-fit: cover; border-radius: 8px;">
+                <?php else: ?>
+                    🍽️
+                <?php endif; ?>
+            </div>
+            <div class="recipe-content">
+                <h3 class="recipe-title"><?= htmlspecialchars($entry['nama']) ?></h3>
+                <p class="recipe-description"><?= htmlspecialchars($entry['deskripsi']) ?></p>
+                <div class="recipe-meta">
+                    <div class="recipe-rating">
+                        <span class="stars">★★★★☆</span>
+                        <span>4.6</span>
+                    </div>
+                    <div class="recipe-time">
+                        <span>⏱</span>
+                        <span><?= htmlspecialchars($entry['alamat']) ?></span>
                     </div>
                 </div>
-            </div> -->
+            </div>
         </div>
+    <?php endforeach; ?>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </div> 
     </div>
 </body>
 </html>
