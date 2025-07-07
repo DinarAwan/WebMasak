@@ -38,7 +38,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Arahkan pengguna berdasarkan hasil login
     if ($login_sukses) {
         // Jika login berhasil, arahkan ke halaman sukses
-        header('Location: login_sukses.html');
+        header('Location: login_sukses.php');
         exit();
     } else {
         // Jika gagal, kembalikan ke halaman login dengan parameter error
