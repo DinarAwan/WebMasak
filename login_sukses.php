@@ -42,22 +42,7 @@ if (file_exists($file_path)) {
         </div>
     </div>
 
-    <div class="navbar-center">
-            <a href="login_sukses.html">Home</a>
-            <a href="health_program.php">Kalkulator Kesehatan</a>
-            <a href="about/about.php">Tentang</a>
-            <a href="SignUp_LogIn_Form.php" class="btn-back">Logout</a>
-        
-            <a href="tambahMasakan/tambah.php"><div class="notification-icon ">
-                <h1>+</h1>
-            </div></a>
-            <div class="notification-icon icon-search"></div>
-            <div class="user-profile">
-                <div class="user-avatar">M</div>
-                <span class="user-name">MasAwan</span>
-                <div class="dropdown-arrow"></div>
-            </div>
-        </div>
+ 
 
 
     <div class="navbar-right">
@@ -65,9 +50,7 @@ if (file_exists($file_path)) {
             <a href="health_program.php">Kalkulator Kesehatan</a>
             <a href="about/about.php">Tentang</a>
             <a href="SignUp_LogIn_Form.php" class="btn-back">Logout</a>
-        <!-- </div>
-
-        <div class="navbar-right"> -->
+   
             <a href="tambahMasakan/tambah.php"><div class="notification-icon ">
                 <h1>+</h1>
             </div></a>
@@ -79,12 +62,7 @@ if (file_exists($file_path)) {
             </div>
 
         </div>
-        <div class="notification-icon icon-search"></div>
-        <div class="user-profile">
-            <div class="user-avatar">M</div>
-            <span class="user-name">MasAwan</span>
-            <div class="dropdown-arrow"></div>
-        </div>
+     
     </div>
 </nav>
 
