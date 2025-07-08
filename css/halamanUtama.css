@@ -1,17 +1,16 @@
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-a{
+a {
     text-decoration: none;
-    color: black;
+    color: inherit;
 }
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #f8f9fa;
 }
 
@@ -29,7 +28,6 @@ body {
 .navbar-left {
     display: flex;
     align-items: center;
-    gap: 24px;
 }
 
 .logo {
@@ -54,47 +52,26 @@ body {
     font-weight: bold;
 }
 
-.navbar-center {
-    display: flex;
-    align-items: center;
-    gap: 16px;
-}
-
-.nav-icon {
-    width: 40px;
-    height: 40px;
-    border-radius: 8px;
-    background-color: #f7fafc;
-    border: 1px solid #e2e8f0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #718096;
-    cursor: pointer;
-    transition: all 0.2s;
-}
-
-.nav-icon:hover {
-    background-color: #edf2f7;
-    color: #4a5568;
-}
-
-.nav-icon.active {
-    background-color: #667eea;
-    color: white;
-    border-color: #667eea;
-}
-
 .navbar-right {
     display: flex;
     align-items: center;
     gap: 16px;
 }
 
+.navbar-right a {
+    font-weight: 500;
+    color: #4a5568;
+    transition: color 0.2s;
+}
+
+.navbar-right a:hover {
+    color: #667eea;
+}
+
 .notification-icon {
     width: 40px;
     height: 40px;
-    border-radius: 8px;
+    border-radius: 50%;
     background-color: #f7fafc;
     border: 1px solid #e2e8f0;
     display: flex;
@@ -103,7 +80,6 @@ body {
     color: #718096;
     cursor: pointer;
     transition: all 0.2s;
-    position: relative;
 }
 
 .notification-icon:hover {
@@ -111,15 +87,23 @@ body {
     color: #4a5568;
 }
 
-.notification-dot {
-    position: absolute;
-    top: -2px;
-    right: -2px;
-    width: 8px;
-    height: 8px;
-    background-color: #f56565;
-    border-radius: 50%;
-    border: 2px solid white;
+/* Style untuk ikon + agar lebih rapi */
+.notification-icon h1 {
+    font-size: 24px;
+    font-weight: 300;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    color: #718096;
+}
+
+.notification-icon:hover h1 {
+    color: #4a5568;
+}
+
+.icon-search::before {
+    content: "🔍";
+    font-size: 16px;
 }
 
 .user-profile {
@@ -127,13 +111,6 @@ body {
     align-items: center;
     gap: 8px;
     cursor: pointer;
-    padding: 8px 12px;
-    border-radius: 8px;
-    transition: all 0.2s;
-}
-
-.user-profile:hover {
-    background-color: #f7fafc;
 }
 
 .user-avatar {
@@ -155,46 +132,10 @@ body {
     color: #2d3748;
 }
 
-.dropdown-arrow {
-    width: 16px;
-    height: 16px;
-    color: #a0aec0;
-}
-
-/* Icons using CSS shapes */
-.icon-mail::before {
-    content: "✉";
-    font-size: 16px;
-}
-
-.icon-export::before {
-    content: "↗";
-    font-size: 16px;
-}
-
-.icon-check::before {
-    content: "✓";
-    font-size: 16px;
-}
-
-.icon-settings::before {
-    content: "⚙";
-    font-size: 16px;
-}
-
-.icon-bell::before {
-    content: "🔔";
-    font-size: 16px;
-}
-
-.icon-search::before {
-    content: "🔍";
-    font-size: 16px;
-}
-
 .dropdown-arrow::before {
     content: "▼";
     font-size: 10px;
+    color: #a0aec0;
 }
 
 /* Content Area */
@@ -208,76 +149,62 @@ body {
     font-size: 24px;
     font-weight: 600;
     color: #2d3748;
-    margin-bottom: 16px;
+    margin-bottom: 20px;
 }
 
 .card-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 24px;
     margin-bottom: 40px;
 }
 
 .recipe-card {
     background: white;
     border-radius: 12px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
     overflow: hidden;
     transition: transform 0.2s, box-shadow 0.2s;
-    cursor: pointer;
+    display: flex;
+    flex-direction: column;
 }
 
 .recipe-card:hover {
     transform: translateY(-4px);
-    box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.12);
 }
 
 .recipe-image {
     width: 100%;
-    height: 200px;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    height: 180px;
+    background: linear-gradient(135deg, #e0e0e0 0%, #c7c7c7 100%);
     display: flex;
     align-items: center;
     justify-content: center;
     color: white;
     font-size: 48px;
-    position: relative;
+    flex-shrink: 0;
 }
 
-.recipe-image.food1 {
-    background: linear-gradient(135deg, #ff6b6b 0%, #ffa726 100%);
+.recipe-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
-.recipe-image.food2 {
-    background: linear-gradient(135deg, #4ecdc4 0%, #44a08d 100%);
-}
+.recipe-image.food1 { background: linear-gradient(135deg, #ff6b6b 0%, #ffa726 100%); }
+.recipe-image.food2 { background: linear-gradient(135deg, #4ecdc4 0%, #44a08d 100%); }
+.recipe-image.food3 { background: linear-gradient(135deg, #a8e6cf 0%, #7fcdcd 100%); }
+.recipe-image.food4 { background: linear-gradient(135deg, #f77062 0%, #fe5196 100%); }
+.recipe-image.food5 { background: linear-gradient(135deg, #fdeB71 0%, #f8d800 100%); }
+.recipe-image.food6 { background: linear-gradient(135deg, #84fab0 0%, #8fd3f4 100%); }
 
-.recipe-image.food3 {
-    background: linear-gradient(135deg, #a8e6cf 0%, #7fcdcd 100%);
-}
-
-.recipe-image.food4 {
-    background: linear-gradient(135deg, #ffd3a5 0%, #fd9853 100%);
-}
-
-.recipe-image.food5 {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-}
-
-.recipe-image.food6 {
-    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
-}
-
-.recipe-image.food7 {
-    background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
-}
-
-.recipe-image.food8 {
-    background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);
-}
 
 .recipe-content {
     padding: 20px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
 }
 
 .recipe-title {
@@ -290,56 +217,130 @@ body {
 .recipe-description {
     font-size: 14px;
     color: #718096;
-    margin-bottom: 12px;
     line-height: 1.5;
+    margin-bottom: 16px;
+    flex-grow: 1;
 }
 
 .recipe-meta {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-size: 12px;
+    font-size: 13px;
     color: #a0aec0;
+    border-top: 1px solid #e9ecef;
+    padding-top: 12px;
 }
 
-.recipe-rating {
+.recipe-rating, .recipe-time {
     display: flex;
     align-items: center;
-    gap: 4px;
+    gap: 6px;
 }
 
 .stars {
-    color: #fbb6ce;
+    color: #ffc107;
+    font-size: 14px;
 }
 
-.recipe-time {
+/* Form Styles */
+.form-container-wrapper {
+    max-width: 800px;
+    margin: 30px auto;
+    background: white;
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+}
+
+.form-container-wrapper h2 {
+    text-align: center;
+    color: #2d3748;
+    font-size: 24px;
+    margin-bottom: 25px;
+    font-weight: 600;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: #4a5568;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.form-group input[type="text"],
+.form-group input[type="number"],
+.form-group input[type="file"],
+.form-group textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    font-size: 16px;
+    background: #f7fafc;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #667eea;
+    background: white;
+    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.2);
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.button-group {
+    margin-top: 25px;
     display: flex;
-    align-items: center;
-    gap: 4px;
+    gap: 15px;
 }
 
-/* Pastikan navbar dapat menampung item di kiri dan kanan */
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.button-group button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
 }
 
-/* Sembunyikan kelas navbar-center jika masih ada */
-.navbar-center {
-    display: none;
+.button-group button:hover {
+    transform: translateY(-2px);
 }
 
-/* Atur tata letak untuk semua item di sisi kanan */
-.navbar-right {
-    display: flex;
-    align-items: center;
-    gap: 20px; /* Memberi jarak antar item */
+.kirim {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    box-shadow: 0 4px 15px rgba(118, 75, 162, 0.3);
 }
 
-/* Pastikan link di navbar kanan terlihat bagus */
-.navbar-right a {
-    text-decoration: none;
-    color: #333; /* Warna teks gelap */
+.batal {
+    background-color: #e2e8f0;
+    color: #4a5568;
+}
+
+.batal:hover {
+     background-color: #cbd5e0;
+}
+
+.link-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.view-link {
+    color: #667eea;
     font-weight: 500;
 }
