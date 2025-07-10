@@ -45,7 +45,7 @@
     <div class="main-content">
         
         <div class="banner-container">
-            <img src="" alt="Team Banner">
+            <img src="banner.jpg" alt="Team Banner">
         </div>
 
         <div class="profile-grid">
@@ -72,21 +72,21 @@
 
             <div class="profile-card">
                 <div class="profile-image">
-                    <img src="https://via.placeholder.com/300x250.png/CCCCCC/000000?text=Foto+Profil" alt="Foto Profil 3">
+                    <img src="anggita.png" alt="Foto Profil 3">
                 </div>
                 <div class="profile-info">
-                    <h3>Nama Anggota 3</h3>
-                    <p>Jabatan / NIM</p>
+                    <h3>ANGGITA RAMADANIS B</h3>
+                    <p>2400018191</p>
                 </div>
             </div>
 
             <div class="profile-card">
                 <div class="profile-image">
-                    <img src="https://via.placeholder.com/300x250.png/CCCCCC/000000?text=Foto+Profil" alt="Foto Profil 4">
+                    <img src="dinat.png" alt="Foto Profil 4">
                 </div>
                 <div class="profile-info">
-                    <h3>Nama Anggota 4</h3>
-                    <p>Jabatan / NIM</p>
+                    <h3>DINAR SONIAWAN</h3>
+                    <p>2400018188</p>
                 </div>
             </div>
 
