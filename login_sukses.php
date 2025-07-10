@@ -69,7 +69,7 @@ if (file_exists($file_path)) {
     <div class="content">
         <h2 class="section-title">Resep Terpopuler</h2>
         <div class="card-grid">
-            <div class="recipe-card">
+            <a href="isi_konten/konten1.html" class="recipe-card">
                 <div class="recipe-image food1">🍝</div>
                 <div class="recipe-content">
                     <h3 class="recipe-title">Spaghetti Carbonara</h3>
@@ -79,15 +79,16 @@ if (file_exists($file_path)) {
                             <span class="stars">★★★★★</span>
                             <span>4.8</span>
                         </div>
+                          
                         <div class="recipe-time">
                             <span>⏱</span>
                             <span>25 min</span>
                         </div>
                     </div>
                 </div>
-            </div>
+            </a>
 
-            <div class="recipe-card">
+            <a href="isi_konten/konten2.html" class="recipe-card">
                 <div class="recipe-image food2">🍛</div>
                 <div class="recipe-content">
                     <h3 class="recipe-title">Nasi Goreng Spesial</h3>
@@ -103,9 +104,9 @@ if (file_exists($file_path)) {
                         </div>
                     </div>
                 </div>
-            </div>
+            </a>
 
-            <div class="recipe-card">
+            <a href="isi_konten/konten3.html" class="recipe-card">
                 <div class="recipe-image food3">🥗</div>
                 <div class="recipe-content">
                     <h3 class="recipe-title">Caesar Salad</h3>
@@ -121,12 +122,16 @@ if (file_exists($file_path)) {
                         </div>
                     </div>
                 </div>
-            </div>
+           
+
+            </a>
+
+           
         </div>
 
         <h2 class="section-title">Resep Lainnya</h2>
         <div class="card-grid">
-            <div class="recipe-card">
+            <a href="isi_konten/konten4.html" class="recipe-card">
                 <div class="recipe-image food5">🍜</div>
                 <div class="recipe-content">
                     <h3 class="recipe-title">Ramen Ayam</h3>
@@ -142,9 +147,9 @@ if (file_exists($file_path)) {
                         </div>
                     </div>
                 </div>
-            </div>
+            </a>
 
-            <div class="recipe-card">
+            <a href="isi_konten/konten5.html" class="recipe-card">
                 <div class="recipe-image food6">🥘</div>
                 <div class="recipe-content">
                     <h3 class="recipe-title">Rendang Daging</h3>
@@ -160,9 +165,9 @@ if (file_exists($file_path)) {
                         </div>
                     </div>
                 </div>
-            </div>
+            </a>
 
-            <div class="recipe-card">
+            <a href="isi_konten/konten6.html" class="recipe-card">
                 <div class="recipe-image food7">🍤</div>
                 <div class="recipe-content">
                     <h3 class="recipe-title">Udang Asam Manis</h3>
@@ -178,7 +183,7 @@ if (file_exists($file_path)) {
                         </div>
                     </div>
                 </div>
-            </div>
+            </a>
 
 
 

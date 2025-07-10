@@ -1,0 +1,718 @@
+
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f8f8;
+}
+
+.container {
+  display: flex;
+  padding: 40px;
+  gap: 40px;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+/* Konten 1 start */
+.sidebar {
+  background-color: #ffa726;
+  padding: 20px;
+  border-radius: 12px;
+  width: 600px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.Bungkus-Gambar {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.sidebar img {
+  width: 180px;
+  border-radius: 12px;
+}
+
+.sidebar h3 {
+  text-align: center;
+  font-size: 18px;
+  margin-top: 10px;
+  margin-bottom: 16px;
+  color: rgb(0, 0, 0);
+}
+
+.sidebar ul {
+  padding-left: 20px;
+}
+
+.Main {
+  background-color: white;
+  padding: 20px;
+  border-radius: 12px;
+  width: 700px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.Main h2 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.Main h3 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.Main ul {
+  padding-left: 20px;
+}
+
+
+.Bahan{
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Bahan li{
+font-weight: bold;
+ background-color: #fff;
+  padding: 12px 20px;
+  margin-bottom: 12px;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 320px;
+  font-size: 16px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.05);
+  
+} 
+
+.Langkah{
+    max-width: 600px;
+  margin: 20px auto;
+  padding: 0 20px;
+  font-size: 16px;
+  line-height: 1.6;
+  counter-reset: step;
+  list-style: none;
+}
+
+.Langkah li{
+    background: #ffffff;
+  border-radius: 12px;
+  padding: 16px 20px;
+  margin-bottom: 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  position: relative;
+}
+
+/* Tombol back */
+.tombolBack {
+  display: inline-block;
+  margin: 20px;
+  padding: 10px 16px;
+  font-size: 16px;
+  background-color: #9718ff;
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+}   
+
+
+/* untuk membuat nomor */
+.Langkah li::before {
+  counter-increment: step;
+  content: counter(step) ".";
+  position: absolute;
+  left: -40px;
+  top: 16px;
+  background-color: #e48c00;
+  color: white;
+  font-weight: bold;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 28px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+/* konten 1 end */
+
+
+
+/* konten 2 start */
+.sidebar2 {
+  background-color: #ff5739;
+  padding: 20px;
+  border-radius: 12px;
+  width: 600px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.Bungkus-Gambar2 {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.sidebar2 img {
+  width: 180px;
+  border-radius: 12px;
+}
+
+.sidebar2 h3 {
+  text-align: center;
+  font-size: 18px;
+  margin-top: 10px;
+  margin-bottom: 16px;
+  color: rgb(0, 0, 0);
+}
+
+.sidebar2 ul {
+  padding-left: 20px;
+}
+
+.Main2 {
+  background-color: white;
+  padding: 20px;
+  border-radius: 12px;
+  width: 700px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.Main2 h2 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.Main2 h3 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.Main2 ul {
+  padding-left: 20px;
+}
+
+
+.Bahan2{
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Bahan2 li{
+font-weight: bold;
+ background-color: #fff;
+  padding: 12px 20px;
+  margin-bottom: 12px;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 320px;
+  font-size: 16px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.05);
+  
+} 
+
+.Langkah2{
+    max-width: 600px;
+  margin: 20px auto;
+  padding: 0 20px;
+  font-size: 16px;
+  line-height: 1.6;
+  counter-reset: step;
+  list-style: none;
+}
+
+.Langkah2 li{
+    background: #ffffff;
+  border-radius: 12px;
+  padding: 16px 20px;
+  margin-bottom: 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  position: relative;
+}
+
+/* untuk membuat nomor konten 2*/
+.Langkah2 li::before {
+  counter-increment: step;
+  content: counter(step) ".";
+  position: absolute;
+  left: -40px;
+  top: 16px;
+  background-color: #ff2f14;
+  color: white;
+  font-weight: bold;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 28px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+/* konten 2 end */
+
+
+/* konten 3 Start */
+.sidebar3 {
+  background-color: #64f543;
+  padding: 20px;
+  border-radius: 12px;
+  width: 600px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.Bungkus-Gambar3 {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.sidebar3 img {
+  width: 180px;
+  border-radius: 12px;
+}
+
+.sidebar3 h3 {
+  text-align: center;
+  font-size: 18px;
+  margin-top: 10px;
+  margin-bottom: 16px;
+  color: rgb(0, 0, 0);
+}
+
+.sidebar3 ul {
+  padding-left: 20px;
+}
+
+.Main3 {
+  background-color: white;
+  padding: 20px;
+  border-radius: 12px;
+  width: 700px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.Main3 h2 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.Main3 h3 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.Main3 ul {
+  padding-left: 20px;
+}
+
+
+.Bahan3{
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Bahan3 li{
+font-weight: bold;
+ background-color: #fff;
+  padding: 12px 20px;
+  margin-bottom: 12px;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 320px;
+  font-size: 16px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.05);
+  
+} 
+
+.Langkah3{
+    max-width: 600px;
+  margin: 20px auto;
+  padding: 0 20px;
+  font-size: 16px;
+  line-height: 1.6;
+  counter-reset: step;
+  list-style: none;
+}
+
+.Langkah3 li{
+    background: #ffffff;
+  border-radius: 12px;
+  padding: 16px 20px;
+  margin-bottom: 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  position: relative;
+}
+
+/* untuk membuat nomor konten 3*/
+.Langkah3 li::before {
+  counter-increment: step;
+  content: counter(step) ".";
+  position: absolute;
+  left: -40px;
+  top: 16px;
+  background-color: #00ff11;
+  color: white;
+  font-weight: bold;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 28px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+/* konten 3 end */
+
+
+
+/* konten 4 start */
+.sidebar4 {
+  background-color: #9b0f0f;
+  padding: 20px;
+  border-radius: 12px;
+  width: 600px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.Bungkus-Gambar4 {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.sidebar4 img {
+  width: 180px;
+  border-radius: 12px;
+}
+
+.sidebar4 h3 {
+  text-align: center;
+  font-size: 18px;
+  margin-top: 10px;
+  margin-bottom: 16px;
+  color: rgb(0, 0, 0);
+}
+
+.sidebar4 ul {
+  padding-left: 20px;
+}
+
+.Main4 {
+  background-color: white;
+  padding: 20px;
+  border-radius: 12px;
+  width: 700px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.Main4 h2 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.Main4 h3 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.Main4 ul {
+  padding-left: 20px;
+}
+
+
+.Bahan4{
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Bahan4 li{
+font-weight: bold;
+ background-color: #fff;
+  padding: 12px 20px;
+  margin-bottom: 12px;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 320px;
+  font-size: 16px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.05);
+  
+} 
+
+.Langkah4{
+    max-width: 600px;
+  margin: 20px auto;
+  padding: 0 20px;
+  font-size: 16px;
+  line-height: 1.6;
+  counter-reset: step;
+  list-style: none;
+}
+
+.Langkah4 li{
+    background: #ffffff;
+  border-radius: 12px;
+  padding: 16px 20px;
+  margin-bottom: 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  position: relative;
+}
+
+/* untuk membuat nomor konten 4*/
+.Langkah4 li::before {
+  counter-increment: step;
+  content: counter(step) ".";
+  position: absolute;
+  left: -40px;
+  top: 16px;
+  background-color: #600101;
+  color: white;
+  font-weight: bold;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 28px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+/* konten 4 end */
+
+
+/* Konten 5 start */
+.sidebar5 {
+  background-color: #4e2a04;
+  padding: 20px;
+  border-radius: 12px;
+  width: 600px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.Bungkus-Gambar5 {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.sidebar5 img {
+  width: 180px;
+  border-radius: 12px;
+}
+
+.sidebar5 h3 {
+  text-align: center;
+  font-size: 18px;
+  margin-top: 10px;
+  margin-bottom: 16px;
+  color: rgb(0, 0, 0);
+}
+
+.sidebar5 ul {
+  padding-left: 20px;
+}
+
+.Main5 {
+  background-color: white;
+  padding: 20px;
+  border-radius: 12px;
+  width: 700px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.Main5 h2 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.Main5 h3 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.Main5 ul {
+  padding-left: 20px;
+}
+
+
+.Bahan5{
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Bahan5 li{
+font-weight: bold;
+ background-color: #fff;
+  padding: 12px 20px;
+  margin-bottom: 12px;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 320px;
+  font-size: 16px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.05);
+  
+} 
+
+.Langkah5{
+    max-width: 600px;
+  margin: 20px auto;
+  padding: 0 20px;
+  font-size: 16px;
+  line-height: 1.6;
+  counter-reset: step;
+  list-style: none;
+}
+
+.Langkah5 li{
+    background: #ffffff;
+  border-radius: 12px;
+  padding: 16px 20px;
+  margin-bottom: 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  position: relative;
+}
+
+/* untuk membuat nomor konten 5*/
+.Langkah5 li::before {
+  counter-increment: step;
+  content: counter(step) ".";
+  position: absolute;
+  left: -40px;
+  top: 16px;
+  background-color: #600101;
+  color: white;
+  font-weight: bold;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 28px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+/* koonten 5 end */
+
+
+/* Konten 6 start */
+.sidebar6 {
+  background-color: #f05400;
+  padding: 20px;
+  border-radius: 12px;
+  width: 600px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.Bungkus-Gambar6 {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.sidebar6 img {
+  width: 180px;
+  border-radius: 12px;
+}
+
+.sidebar6 h3 {
+  text-align: center;
+  font-size: 18px;
+  margin-top: 10px;
+  margin-bottom: 16px;
+  color: rgb(0, 0, 0);
+}
+
+.sidebar6 ul {
+  padding-left: 20px;
+}
+
+.Main6 {
+  background-color: white;
+  padding: 20px;
+  border-radius: 12px;
+  width: 700px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.Main6 h2 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.Main6 h3 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.Main6 ul {
+  padding-left: 20px;
+}
+
+
+.Bahan6{
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Bahan6 li{
+font-weight: bold;
+ background-color: #fff;
+  padding: 12px 20px;
+  margin-bottom: 12px;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 320px;
+  font-size: 16px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.05);
+  
+} 
+
+.Langkah6{
+    max-width: 600px;
+  margin: 20px auto;
+  padding: 0 20px;
+  font-size: 16px;
+  line-height: 1.6;
+  counter-reset: step;
+  list-style: none;
+}
+
+.Langkah6 li{
+    background: #ffffff;
+  border-radius: 12px;
+  padding: 16px 20px;
+  margin-bottom: 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  position: relative;
+}
+
+/* untuk membuat nomor konten 6*/
+.Langkah6 li::before {
+  counter-increment: step;
+  content: counter(step) ".";
+  position: absolute;
+  left: -40px;
+  top: 16px;
+  background-color: #bc3800;
+  color: white;
+  font-weight: bold;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 28px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
